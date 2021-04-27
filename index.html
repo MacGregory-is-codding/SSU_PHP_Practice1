@@ -10,85 +10,36 @@
 <body>
     <main>
         <div class="app">
-            <form id="signup-form" method="post" class="form" action="signup.php">
+            <form id="signup-form" method="post" class="signup-form" action="signup.php">
                 <!-- signup form header begin -->
-                <section class="signup-form__section">
-                    <h2 class="signup-form__header">Sign up</h2>
+                <section class="signup-form__section signup-form__header">
+                    <h2 class="signup-form__title">Sign up</h2>
                 </section>
                 <!-- signup form header end -->
-                
                 <!-- signup form body begin -->
                 <section class="signup-form__section signup-form__body">
                     <!-- full name begin -->
                     <article class="signup-form__article signup-form__article_fullname">
-                        <label for="signup-form__input_name">
-                            <span>Name</span> 
-                        </label>
-                        <input type="text" class="signup-form__input signup-form__input_name" id="signup-form__input_name">
-                        
-                        <label for="signup-form__input_surname">
-                            <span>Surname</span> 
-                        </label>
-                        <input type="text" class="signup-form__input signup-form__input_surname" id="signup-form__input_surname">
+                        <input placeholder="Name"    name="name"    type="text" class="signup-form__input signup-form__input_name"    id="signup-form__input_name"    required>
+                        <input placeholder="Surname" name="surname" type="text" class="signup-form__input signup-form__input_surname" id="signup-form__input_surname" required>
                     </article>
                     <!-- full name end -->
                     <!-- credentials begin -->
                     <article class="signup-form__article signup-form__article_credentials">
-                        <label for="signup-form__input_password">
-                            <span>Password</span> 
-                        </label>
-                        <input type="password" class="signup-form__input signup-form__input_password" id="signup-form__input_password">
-
-                        <label for="signup-form__input_password">
-                            <span>Repeat password</span> 
-                        </label>
-                        <input type="password" class="signup-form__input signup-form__input_password" id="signup-form__input_password">
+                        <input placeholder="Password"        name="pass"        type="password" class="signup-form__input signup-form__input_password" id="signup-form__input_password" required>
+                        <input placeholder="Repeat password" name="repeat-pass" type="password" class="signup-form__input signup-form__input_password" id="signup-form__input_password" required>
                     </article>
                     <!-- credentials end -->
                     <!-- contacts begin -->
                     <article class="signup-form__article signup-form__article_contacts">
-                        <label for="signup-form__input_email">
-                            <span>Email</span> 
-                        </label>
-                        <input type="email" class="signup-form__input signup-form__input_email" id="signup-form__input_email">
-
-                        <label for="signup-form__input_tel">
-                            <span>Phone number</span> 
-                        </label>
-                        <input type="tel" class="signup-form__input signup-form__input_tel" id="signup-form__input_tel">
+                        <input placeholder="Email"        name="email" type="email" class="signup-form__input signup-form__input_email" id="signup-form__input_email" required>
+                        <input placeholder="Phone number" name="phone" type="tel"   class="signup-form__input signup-form__input_tel"   id="signup-form__input_tel"   required>
                     </article>
                     <!-- contacts end -->
-                    <!-- additional info begin -->
-                    <article class="signup-form__article signup-form__article_info">
-                        <label for="signup-form__input_sex">
-                            <span>Sex</span>
-                        </label>
-
-                        <select name="sex" id="signup-form__input_sex">
-                            <option value="empty"></option>
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
-                            <option value="else">Else</option>
-                        </select>
-
-                        <label for="signup-form__input_about">
-                            <span>About you</span> 
-                        </label>
-                        <textarea class="signup-form__input signup-form__input_about" id="signup-form__input_about">
-                        </textarea>
-                    </article>
-                    <!-- additional info end -->
                     <!-- submit begin -->
-                    <article class="signup-form__article signup-form__article_contacts">
-                        <label for="signup-form__input_email">
-                            <span>Email</span> 
-                        </label>
-                        <input type="email" class="signup-form__input signup-form__input_email" id="signup-form__input_email">
-
-                        <label for="signup-form__input_tel">
-                            <span>Phone number</span> 
-                        </label>
-                        <input type="tel" class="signup-form__input signup-form__input_tel" id="signup-form__input_tel">
+                    <article class="signup-form__article signup-form__article_submit">
+                        <input type="submit" class="signup-form__button signup-form__button_submit" id="signup-form__button_submit" value="Sign up">
+                        <input type="reset"  class="signup-form__button signup-form__button_reset"  id="signup-form__button_reset"  value="Clear">
                     </article>
                     <!-- submit end -->
                 </section>
