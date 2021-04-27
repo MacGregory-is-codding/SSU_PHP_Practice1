@@ -1,0 +1,18 @@
+/*
+    ### GLOBAL SECTION - BASIC NORMALIZE
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.app {
+    margin: 50px auto;
+    max-width: 600px;
+    border: 1px solid red;
+}
+
+
